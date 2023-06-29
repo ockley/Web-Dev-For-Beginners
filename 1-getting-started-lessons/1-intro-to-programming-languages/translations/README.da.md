@@ -1,41 +1,41 @@
-# Introduction to Programming Languages and Tools of the Trade
+# Introduktion til programmeringssprog og værktøjer i branchen
 
-This lesson covers the basics of programming languages. The topics covered here apply to most modern programming languages today. In the 'Tools of the Trade' section, you'll learn about useful software that helps you as a developer.
+Denne lektion dækker det grundlæggende i programmeringssprog. De emner, der behandles her, gælder for de fleste moderne programmeringssprog i dag. I afsnittet 'Tools of the Trade' lærer du om nyttig software, der hjælper dig som udvikler.
 
 ![Intro Programming](../../sketchnotes/webdev101-programming.png)
 > Sketchnote by [Tomomi Imura](https://twitter.com/girlie_mac)
 
-## Pre-Lecture Quiz
+## Quiz før undervisning
 [Pre-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/1)
 
-## Introduction
+## Introduktion
 
-In this lesson, we'll cover:
+I denne lektion vil vi dække:
 
-- What is programming?
-- Types of programming languages
-- Basic elements of a program
-- Useful software and tooling for the professional developer
+- Hvad er programmering?
+- Typer af programmeringssprog
+- Grundlæggende elementer i et program
+- Nyttig software og værktøj til den professionelle udvikler
 
-> You can take this lesson on [Microsoft Learn](https://docs.microsoft.com/learn/modules/web-development-101/introduction-programming/?WT.mc_id=academic-77807-sagibbon)!
+> Du kan tage denne lektion på [Microsoft Learn] (https://docs.microsoft.com/learn/modules/web-development-101/introduction-programming/?WT.mc_id=academic-77807-sagibbon)!
 
-## What is Programming?
+## Hvad er programmering?
 
-Programming (also known as coding) is the process of writing instructions for a device such as a computer or mobile device. We write these instructions with a programming language, which is then interpreted by the device. These sets of instructions may be referred to by various names, but *program*, *computer program*, *application (app)*, and *executable* are a few popular names.
+Programmering (også kendt som kodning) er processen med at skrive instruktioner til en enhed som f.eks. en computer eller en mobil enhed. Vi skriver disse instruktioner med et programmeringssprog, som derefter fortolkes af enheden. Disse sæt af instruktioner kan have forskellige navne, men *program*, *computerprogram*, *applikation (app)* og *eksekverbar (executable)* er nogle få populære navne.
 
-A *program* can be anything that is written with code; websites, games, and phone apps are programs. While it's possible to create a program without writing code, the underlying logic is interpreted by the device and that logic was most likely written with code. A program that is *running* or *executing* code is carrying out instructions. The device that you're reading this lesson with is running a program to print it to your screen.
+Et *program* kan være alt, der er skrevet med kode; hjemmesider, spil og telefonapps er programmer. Selvom det er muligt at skabe et program uden at skrive kode, fortolkes den underliggende logik af enheden, og den logik blev sandsynligvis skrevet med kode. Et program, der *kører* eller *eksekverer* kode, udfører instruktioner. Den enhed, du læser denne lektion med, kører et program for at udskrive den til din skærm.
 
-✅ Do a little research: who is considered to have been the world's first computer programmer?
+✅ Lav lidt research: Hvem anses for at have været verdens første computerprogrammør?
 
-## Programming Languages
+## Programmeringssprog
 
-Programming languages enable developers to write instructions for a device. Devices can only understand binary (1s and 0s), and for *most* developers that's not a very efficient way to communicate. Programming languages are the vehicle for communication between humans and computers.
+Programmeringssprog gør det muligt for udviklere at skrive instruktioner til en enhed. Enheder kan kun forstå binære tal (1'ere og 0'ere), og for *de fleste* udviklere er det ikke en særlig effektiv måde at kommunikere på. Programmeringssprog er midlet til kommunikation mellem mennesker og computere.
 
-Programming languages come in different formats and may serve different purposes. For example, JavaScript is primarily used for web applications, while Bash is primarily used for operating systems.
+Programmeringssprog findes i forskellige formater og kan tjene forskellige formål. For eksempel bruges JavaScript primært til webapplikationer, mens Bash primært bruges til operativsystemer.
 
-*Low level languages* typically require fewer steps than *high level languages* for a device to interpret instructions. However, what makes high level languages popular is their readability and support. JavaScript is considered a high level language.
+*Lavniveausprog* kræver typisk færre trin end *højniveausprog*, for at en enhed kan fortolke instruktioner. Men det, der gør højniveausprog populære, er deres læsbarhed og support. JavaScript betragtes som et højniveausprog.
 
-The following code illustrates the difference between a high level language with JavaScript and a low level language with ARM assembly code.
+Følgende kode illustrerer forskellen mellem et højniveausprog med JavaScript og et lavniveausprog med ARM-assemblerkode.
 
 ```javascript
 let number = 10
@@ -74,42 +74,42 @@ back add r0,r1
  end
 ```
 
-Believe it or not, *they're both doing the same thing*: printing a Fibonacci sequence up to 10.
+Tro det eller ej, *de gør begge det samme*: udskriver en Fibonacci-sekvens op til 10.
 
-✅ A Fibonacci sequence is [defined](https://en.wikipedia.org/wiki/Fibonacci_number) as a set of numbers such that each number is the sum of the two preceding ones, starting from 0 and 1. The first 10 numbers following the Fibonacci sequence are 0, 1, 1, 2, 3, 5, 8, 13, 21 and 34.
+✅ En Fibonacci-sekvens er [defineret](https://en.wikipedia.org/wiki/Fibonacci_number) som et sæt tal, hvor hvert tal er summen af de to foregående, startende fra 0 og 1. De første 10 tal, der følger Fibonacci-sekvensen, er 0, 1, 1, 2, 3, 5, 8, 13, 21 og 34.
 
-## Elements of a Program
+## Elementer i et program
 
-A single instruction in a program is called a *statement* and will usually have a character or line spacing that marks where the instruction ends, or *terminates*. How a program terminates varies with each language.
+En enkelt instruktion i et program kaldes et *statement* og vil normalt have et tegn eller en linjeafstand, der markerer, hvor instruktionen slutter, eller *terminates*. Hvordan et program afsluttes, varierer fra sprog til sprog.
 
-Statements within a program may rely on data provided by a user or elsewhere to carry out instructions. Data can change how a program behaves, so programming languages come with a way to temporarily store data so that it can be used later. These are called *variables*. Variables are statements that instruct a device to save data in its memory. Variables in programs are similar to variables in algebra, where they have a unique name and their value may change over time.
+Udsagn i et program kan være afhængige af data fra en bruger eller andre steder for at udføre instruktioner. Data kan ændre, hvordan et program opfører sig, så programmeringssprog har en måde at gemme data midlertidigt på, så de kan bruges senere. Disse kaldes *variabler*. Variabler er udsagn, der instruerer en enhed i at gemme data i dens hukommelse. Variabler i programmer svarer til variabler i algebra, hvor de har et unikt navn, og deres værdi kan ændre sig over tid.
 
-There's a chance that some statements will not be executed by a device. This is usually by design when written by the developer or by accident when an unexpected error occurs. This type of control over an application makes it more robust and maintainable. Typically, these changes in control happen when certain conditions are met. A common statement used in modern programming to control how a program runs is the `if..else` statement.
+Der er en chance for, at nogle udsagn ikke vil blive udført af en enhed. Det er som regel bevidst, når det er skrevet af udvikleren, eller ved et uheld, når der opstår en uventet fejl. Denne form for kontrol over en applikation gør den mere robust og vedligeholdelig. Typisk sker disse ændringer i kontrollen, når visse betingelser er opfyldt. En almindelig sætning, der bruges i moderne programmering til at kontrollere, hvordan et program kører, er `if..else`-sætningen.
 
-✅ You'll learn more about this type of statement in subsequent lessons.
+✅ Du vil lære mere om denne type udsagn i de efterfølgende lektioner.
 
-## Tools of the Trade
+## Fagets værktøjer
 
 [![Tools of the Trade](https://img.youtube.com/vi/69WJeXGBdxg/0.jpg)](https://youtube.com/watch?v=69WJeXGBdxg "Tools of the Trade")
 
-> 🎥 Click the image above for a video about tooling
+> 🎥 Klik på billedet ovenfor for at se en video om værktøjer
 
-In this section, you'll learn about some software that you may find to be very useful as you start your professional development journey.
+I dette afsnit vil du lære om noget software, som du måske vil finde meget nyttigt, når du starter din professionelle udviklingsrejse.
 
-A **development environment** is a unique set of tools and features that a developer uses often when writing software. Some of these tools have been customized for a developer's specific needs, and may change over time if that developer changes priorities in work, personal projects, or when they use a different programming language. Development environments are as unique as the developers who use them.
+Et **udviklingsmiljø** er et unikt sæt af værktøjer og funktioner, som en udvikler ofte bruger, når han skriver software. Nogle af disse værktøjer er blevet tilpasset en udviklers specifikke behov og kan ændre sig over tid, hvis udvikleren ændrer prioriteter i arbejdet, personlige projekter, eller når de bruger et andet programmeringssprog. Udviklingsmiljøer er lige så unikke som de udviklere, der bruger dem.
 
-### Editors
+### Editorer
 
-One of the most crucial tools for software development is the editor. Editors are where you write your code and sometimes where you run your code.
+Et af de mest afgørende værktøjer til softwareudvikling er editoren. Editorer er der, hvor du skriver din kode, og nogle gange der, hvor du kører din kode.
 
-Developers rely on editors for a few additional reasons:
+Udviklere er afhængige af editorer af et par andre grunde:
 
-- *Debugging* helps uncover bugs and errors by stepping through the code, line by line. Some editors have debugging capabilities; they can be customized and added for specific programming languages.
-- *Syntax highlighting* adds colors and text formatting to code, making it easier to read. Most editors allow customized syntax highlighting.
-- *Extensions and Integrations* are specialized tools for developers, by developers. These tools weren't built into the base editor. For example, many developers document their code to explain how it works. They may install a spell check extension to help find typos within the documentation. Most extensions are intended for use within a specific editor, and most editors come with a way to search for available extensions.
-- *Customization* enables developers to create a unique development environment to suit their needs. Most editors are extremely customizable and may also allow developers to create custom extensions.
+- *Debugging* hjælper med at afdække fejl og mangler ved at gennemgå koden linje for linje. Nogle editorer har debugging-funktioner; de kan tilpasses og tilføjes til specifikke programmeringssprog.
+- *Syntaksfremhævning* tilføjer farver og tekstformatering til koden, hvilket gør den lettere at læse. De fleste editorer tillader tilpasset syntaksfremhævning.
+- *Udvidelser og integrationer* er specialiserede værktøjer til udviklere, af udviklere. Disse værktøjer er ikke indbygget i basiseditoren. For eksempel dokumenterer mange udviklere deres kode for at forklare, hvordan den fungerer. De installerer måske en stavekontroludvidelse for at hjælpe med at finde stavefejl i dokumentationen. De fleste udvidelser er beregnet til brug i en bestemt editor, og de fleste editorer kommer med en måde at søge efter tilgængelige udvidelser.
+- *Tilpasning* gør det muligt for udviklere at skabe et unikt udviklingsmiljø, der passer til deres behov. De fleste editorer kan tilpasses ekstremt meget og kan også give udviklere mulighed for at oprette tilpassede udvidelser.
 
-#### Popular Editors and Web Development Extensions
+#### Populære editorer og udvidelser til webudvikling
 
 - [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=academic-77807-sagibbon)
   - [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
@@ -124,27 +124,27 @@ Developers rely on editors for a few additional reasons:
   - [emmet](https://emmet.io/)
   - [SublimeLinter](http://www.sublimelinter.com/en/stable/)
 
-### Browsers
+### Browsere
 
-Another crucial tool is the browser. Web developers rely on the browser to see how their code runs on the web. It's also used to display the visual elements of a web page that are written in the editor, like HTML.
+Et andet vigtigt værktøj er browseren. Webudviklere er afhængige af browseren for at se, hvordan deres kode kører på nettet. Den bruges også til at vise de visuelle elementer på en webside, der er skrevet i editoren, som HTML.
 
-Many browsers come with *developer tools* (DevTools) that contain a set of helpful features and information to help developers collect and capture important information about their application. For example: If a web page has errors, it's sometimes helpful to know when they occurred. DevTools in a browser can be configured to capture this information.
+Mange browsere leveres med *udviklerværktøjer* (DevTools), der indeholder et sæt nyttige funktioner og oplysninger, der hjælper udviklere med at indsamle og registrere vigtige oplysninger om deres applikation. For eksempel: Hvis en webside har fejl, er det nogle gange nyttigt at vide, hvornår de opstod. DevTools i en browser kan konfigureres til at indfange disse oplysninger.
 
-#### Popular Browsers and DevTools
+#### Populære browsere og DevTools
 
 - [Edge](https://docs.microsoft.com/microsoft-edge/devtools-guide-chromium/?WT.mc_id=academic-77807-sagibbon)
 - [Chrome](https://developers.google.com/web/tools/chrome-devtools/)
 - [Firefox](https://developer.mozilla.org/docs/Tools)
 
-### Command Line Tools
+### Kommandolinjeværktøjer (Command Line Tools)
 
-Some developers prefer a less graphical view for their daily tasks and rely on the command line to achieve this. Writing code requires a significant amount of typing and some developers prefer to not disrupt their flow on the keyboard. They will use keyboard shortcuts to swap between desktop windows, work on different files, and use tools. Most tasks can be completed with a mouse, but one benefit of using the command line is that a lot can be done with command line tools without the need of swapping between the mouse and keyboard. Another benefit of the command line is that they're configurable and you can save a custom configuration, change it later, and import it to other development machines. Because development environments are so unique to each developer, some will avoid using the command line, some will rely on it entirely, and some prefer a mix of the two.
+Nogle udviklere foretrækker en mindre grafisk visning til deres daglige opgaver og er afhængige af kommandolinjen for at opnå dette. At skrive kode kræver en betydelig mængde indtastning, og nogle udviklere foretrækker ikke at forstyrre deres flow på tastaturet. De vil bruge tastaturgenveje til at skifte mellem skrivebordsvinduer, arbejde på forskellige filer og bruge værktøjer. De fleste opgaver kan udføres med musen, men en fordel ved at bruge kommandolinjen er, at meget kan gøres med kommandolinjeværktøjer, uden at man behøver at skifte mellem mus og tastatur. En anden fordel ved kommandolinjen er, at de kan konfigureres, og du kan gemme en brugerdefineret konfiguration, ændre den senere og importere den til andre udviklingsmaskiner. Fordi udviklingsmiljøer er så unikke for hver enkelt udvikler, vil nogle undgå at bruge kommandolinjen, andre vil være helt afhængige af den, og nogle foretrækker en blanding af de to.
 
-### Popular Command Line Options
+### Populære indstillinger for kommandolinjen
 
-Options for the command line will differ based on the operating system you use.
+Indstillingerne for kommandolinjen vil variere afhængigt af det operativsystem, du bruger.
 
-*💻 = comes preinstalled on the operating system.*
+*💻 = er forudinstalleret på operativsystemet.*
 
 #### Windows
 
@@ -165,39 +165,39 @@ Options for the command line will differ based on the operating system you use.
 - [KDE Konsole](https://docs.kde.org/trunk5/en/konsole/konsole/index.html)
 - [Powershell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell-core-on-linux?view=powershell-7/?WT.mc_id=academic-77807-sagibbon)
 
-#### Popular Command Line Tools
+#### Populære kommandolinjeværktøjer
 
-- [Git](https://git-scm.com/) (💻 on most operating systems)
+- [Git](https://git-scm.com/) (💻 på de fleste operativsystemer)
 - [NPM](https://www.npmjs.com/)
 - [Yarn](https://classic.yarnpkg.com/en/docs/cli/)
 
-### Documentation
+### Dokumentation
 
-When a developer wants to learn something new, they'll most likely turn to documentation to learn how to use it. Developers often rely on documentation to guide them through how to use tools and languages properly, and also to gain deeper knowledge of how it works.
+Når en udvikler vil lære noget nyt, vil han eller hun højst sandsynligt se på dokumentationen for at lære, hvordan man bruger det. Udviklere er ofte afhængige af dokumentation til at guide dem gennem, hvordan man bruger værktøjer og sprog korrekt, og også til at få dybere viden om, hvordan det fungerer.
 
-#### Popular Documentation on Web Development
+#### Populær dokumentation om webudvikling
 
-- [Mozilla Developer Network (MDN)](https://developer.mozilla.org/docs/Web), from Mozilla, the publishers of the [Firefox](https://www.mozilla.org/firefox/) browser
+- [Mozilla Developer Network (MDN)](https://developer.mozilla.org/docs/Web), fra Mozilla, udgiverne af browseren [Firefox](https://www.mozilla.org/firefox/)
 - [Frontend Masters](https://frontendmasters.com/learn/)
-- [Web.dev](https://web.dev), from Google, publishers of [Chrome](https://www.google.com/chrome/)
+- [Web.dev](https://web.dev), fra Google, udgiverne af [Chrome](https://www.google.com/chrome/)
 - [Microsoft's own developer docs](https://docs.microsoft.com/microsoft-edge/#microsoft-edge-for-developers), for [Microsoft Edge](https://www.microsoft.com/edge)
 - [W3 Schools](https://www.w3schools.com/where_to_start.asp)
 
-✅ Do some research: Now that you know the basics of a web developer's environment, compare and contrast it with a web designer's environment.
+✅ Lav noget research: Nu, hvor du kender det grundlæggende i en webudviklers miljø, kan du sammenligne og kontrastere det med en webdesigners miljø.
 
 ---
 
-## 🚀 Challenge
+## 🚀 Udfordring
 
-Compare some programming languages. What are some of the unique traits of JavaScript vs. Java? How about COBOL vs. Go?
+Sammenlign nogle programmeringssprog. Hvad er nogle af de unikke træk ved JavaScript vs. Java? Hvad med COBOL vs. Go?
 
-## Post-Lecture Quiz
+## Quiz efter undervisning
 [Post-lecture quiz](https://ashy-river-0debb7803.1.azurestaticapps.net/quiz/2)
 
-## Review & Self Study
+## Gennemgang og selvstudium
 
-Study a bit on the different languages available to the programmer. Try to write a line in one language, and then rewrite it in two others. What did you learn?
+Læs lidt om de forskellige sprog, der er til rådighed for programmøren. Prøv at skrive en linje i ét sprog, og skriv den så om i to andre. Hvad har du lært?
 
-## Assignment
+## Opgave
 
-[Reading the Docs](assignment.md)
+[Læsning af dokumentation](assignment.md)
